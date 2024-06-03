@@ -1,0 +1,18 @@
+# Debugging pod to jump into the cluster
+# It comes with various tools like curl, dig, ping, etc.
+apiVersion: v1
+kind: Pod
+metadata:
+  name: jumper
+  labels:
+    name: jumper
+spec:
+  containers:
+  - name: netshoot-container
+    image: nicolaka/netshoot
+    command: ["/bin/bash"]
+    args: ["-c", "while true; do ping localhost; sleep 60;done"]
+    resources:
+      limits:
+        memory: "128Mi"
+        cpu: "500m"
