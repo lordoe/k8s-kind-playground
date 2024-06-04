@@ -12,7 +12,7 @@
             "KUBECONFIG": "${workspaceFolder}/.kube/config.yaml",
         },
         "terminal.integrated.env.windows": {
-            "KUBECONFIG": "${workspaceFolder}/.kube/config.yaml",
+            "KUBECONFIG": "${workspaceFolder}\\.kube\\config.yaml",
         }
     }
 }
