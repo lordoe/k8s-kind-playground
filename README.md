@@ -10,7 +10,7 @@ The kubernetes cluster is created using kind (Kubernetes in Docker) and some res
 - ArgoCD
 - Wordpress
 
-In order for some applications to work, you need to have a storage class in your kubernetes cluster.
+In order for some applications to work, you need to have a storage class in your kubernetes cluster. Kind provides one by default.
 
 The Ingress Controller should be installed first before deploying other applications in order to have a working ingress.
 
